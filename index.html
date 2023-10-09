@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Discover Canada's wonders</title>
+    <!--Importing Boostrap CSS (first link) and icons (second link) for styling-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.1/font/bootstrap-icons.min.css"
+    integrity="sha512-WYaDo1TDjuW+MPatvDarHSfuhFAflHxD87U9RoB4/CSFh24/jzUHfirvuvwGmJq0U7S9ohBXy4Tfmk2UKkp2gA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!--Part 2: Adding a responsive navigation bar-->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Discover Canada's wonders</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#discoveries">Discoveries</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Our team</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div> 
+        </div> 
+      </nav>
+
+      <!--Part 3 - Adding a carousel-->
+      <section id="features" class="d-none d-md-block">
+        <div id="carouselFeatures" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselFeatures" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1">
+                </button>
+                <button type="button" data-bs-target="#carouselFeatures" data-bs-slide-to="1" aria-label="Slide 2">
+                </button>
+                <button type="button" data-bs-target="#carouselFeatures" data-bs-slide-to="2" aria-label="Slide 3">
+                </button>
+                <button type="button" data-bs-target="#carouselFeatures" data-bs-slide-to="3" aria-label="Slide 4">
+                </button>
+            </div> 
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/carousel1.jpg" class="d-block w-100" alt="Peggys Cove">
+                    
+                    <div class="carousel-caption">
+                        <h5>Peggys Cove</h5>
+                        <p>
+                          St. Margaret's Bay, Nova Scotia
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/carousel2.jpg" class="d-block w-100" alt="Mount Robson">
+                    <div class="carousel-caption">
+                        <h5>Mount Robson</h5>
+                        <p>
+                          Mount Robson Provincial Park, British Columbia
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/carousel3.jpg" class="d-block w-100" alt="Toronto">
+                    <div class="carousel-caption">
+                        <h5>Toronto</h5>
+                        <p>
+                            Ontario
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/carousel4.jpg" class="d-block w-100" alt="The Biosphère">
+                    <div class="carousel-caption">
+                        <h5>The Biosphère</h5>
+                        <p>
+                          Montreal, Quebec
+                        </p>
+                    </div>
+                </div>
+            </div> 
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeatures"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFeatures"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> 
+    </section> 
+  </header>  
+
+    <!--Part 1 -->
+    <!--Question 2) Adding the first section/home section -->
+  <section id="home" class="container mt-3 bg-secondary text-white"> <!--mt (margin-top) & bg (background)-->
+    <div class="d-md-flex py-3 align-items-center"> 
+         <article class="text-center text-md-start"> 
+            <h1>Discover Canada 🇨🇦</h1>
+            <p class="lead">Canada, steeped in a rich history of Indigenous heritage and European exploration, 
+              features a breathtakingly diverse landscape, spanning from the magnificent Rockies to pristine lakes. 
+              With its multicultural embrace of languages, traditions, and cuisines, Canada beckons you to embark on a 
+              life-changing adventure.<br> From the enchanting beauty of Banff National Park to the vibrant streets of Toronto, 
+              unforgettable memories await your discovery in every corner of this vast, welcoming land.</p>
+
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            Discover it !</button>
+        </article>
+        <img src="./assets/images/Alberta.jpg" alt="Image of Alberta" class="w-50 img-fluid rounded d-none d-sm-block mx-3">
+      </div>
+  </section>
+  <!-- Question 3) Second section-->
+  <section id="highlights" class="container py-3">
+    <div class="row text-center gap-2">
+        <div class="col-md">
+            <!--First div element-->
+            <div class="card bg-light bg-gradient">
+                <div class="bg-info">
+                  <i class="bi bi-book fs-1"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">History of Canada</h5>
+                    <p class="card-text">
+                      From Indigenous heritage to European exploration, learn more about Canada's captivating history.
+                    </p>
+                    <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="blank" class="btn btn-info">Learn more</a>
+                </div>
+            </div> 
+        </div> 
+        <!--Second div element-->
+        <div class="col-md">
+            <div class="card bg-light bg-gradient">
+                <div class="bg-info">
+                  <i class="bi bi-brightness-alt-high fs-1"></i>  
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Landscapes</h5>
+                    <p class="card-text">
+                      Explore Canada's stunning landscapes, from majestic mountains to tranquil lakeshores. 
+                    </p>
+                    <a href="https://www.nationalgeographic.com/travel/article/landscapes-photos" target="blank" class="btn  btn-info">Explore them</a>
+                </div>
+            </div> 
+        </div>
+        <!--Third div element-->
+        <div class="col-md">
+            <div class="bg-info">
+              <i class="bi bi-translate fs-1"></i>
+            </div>
+            <div class="card bg-light bg-gradient">
+                <div class="card-body">
+                    <h5 class="card-title">Multiculturalism</h5>
+                    <p class="card-text">
+                      Explore Canada's diverse and welcoming cultural mosaic.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Multiculturalism_in_Canada" target="blank"  class="btn btn-info">Learn more</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+<br>
+<br>
+<!--Question 4) -->
+<section id="discoveries" class="container">
+  <div class="row align-items-center">
+    <!--First div.row-->
+      <div class="col-md border border-secondary rounded-3 bg-light p-2">
+          <h3>Northern part of Canada</h3>
+          <p>
+            Explore the beauty of Canada's northern wilderness, 
+            which includes : 
+          </p>
+          <ul>
+              <li>Expansive tundras</li>
+              <li>Shimmering Northern Lights</li>
+              <li>Vast boreal forests</li>
+          </ul>
+          <a class="btn btn-success w-75 d-block m-auto" href="#" role="button"><!--Make it block in any screen size => d-block-->
+              Explore 
+              <i class="bi-caret-right-fill"></i>
+          </a>
+      </div>
+      <div class="col-md">
+          <img src="./assets/images/northern-lights.jpg" class="w-55 p-1" alt="Northern lights Image">
+      </div>
+  </div>
+    <hr>
+    <div class="row align-items-center">
+        <div class="col-md">
+            <img src="./assets/images/whyte-islet.jpg" class="w-55 p-1" alt="Whyte islet Image">
+        </div>
+        <!--Second div.row-->
+        <div class="col-md border border-secondary rounded-3 bg-light p-2">
+          <h3>Western part of Canada</h3>
+          <p>Discover Canada's west, which includes :
+          </p>
+          <ul>
+              <li>Stunning coastlines</li>
+              <li>Majestic mountains</li>
+              <li>Vibrant cities</li>
+          </ul>
+          <a class="btn btn-warning w-75 d-block m-auto" href="#" role="button">
+            <i class="bi-caret-left-fill"></i>
+              Explore
+          </a>
+        </div>
+      </div> 
+</section> 
+
+<br>
+<br>
+ <!-- Question 5) -->
+ <section id="team" class="container text-center">
+  <h2>Our Team</h2>
+  <p class="lead text-center">Learn more about our local guides</p>
+  <div class="row">
+      <div class="col-md-6 col-lg-3">
+        <!--First team members-->
+          <div class="card">
+              <img src="./assets/images/tm-1.jpeg" class="card-img-top rounded-circle w-50 m-auto m-auto" alt="Michael Cairns">
+              <div class="card-body">
+                  <h5 class="card-title">Michael Cairns<br>Local Guide in Toronto </h5>
+                  <p class="card-text">Meet Michael Cairns, your Toronto guide with a decade of experience. 
+                    Ready to explore Toronto's hidden gems, diverse culture, and delectable food scene? 
+                    Let Michael be your local expert for an unforgettable Toronto adventure!</p>
+                  <a href="#" class="btn btn-secondary">
+                      <i class="bi-linkedin"></i>
+                  </a>
+                  <a href="#" class="btn btn-secondary">
+                      <i class="bi-envelope-fill"></i>
+                  </a>
+                  <a href="#" class="btn btn-secondary">
+                      <i class="bi-facebook"></i>
+                  </a>
+                  <a href="#" class="btn btn-secondary">
+                      <i class="bi-twitter"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <!--Second team members-->
+      <div class="col-md-6 col-lg-3">
+          <div class="card">
+              <img src="./assets/images/tm-2.jpeg" class="card-img-top rounded-circle w-50 m-auto" alt="Morgan Marcus">
+              <div class="card-body">
+                  <h5 class="card-title">Morgan Marcus<br>Local Guide in Montreal</h5>
+                  <p class="card-text">Meet Morgan, your Montreal guide! A local of 10+ years, she's passionate about unveiling 
+                    the city's hidden gems, from its vibrant arts scene to its culinary delights. 
+                    Get ready to explore Montreal through the eyes of a true insider!</p>
+                  <a href="#" class="btn btn-secondary">
+                      <i class="bi-linkedin"></i>
+                  </a>
+                  <a href="#" class="btn btn-secondary">
+                    <i class="bi-envelope-fill"></i>
+                  </a>
+                  <a href="#" class="btn btn-secondary">
+                      <i class="bi-facebook"></i>
+                  </a>
+                  <a href="#" class="btn btn-secondary">
+                      <i class="bi-twitter"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <!--Third team members-->
+      <div class="col-md-6 col-lg-3">
+          <div class="card">
+              <img src="./assets/images/tm-3.jpeg" class="card-img-top rounded-circle w-50 m-auto" alt="Ifran Wahid">
+              <div class="card-body">
+                  <h5 class="card-title">Ifran Wahid<br>Local Guide in Vancouver</h5>
+                  <p class="card-text">
+                   Meet Ifran Wahid, your Vancouver guide with 5 years of expertise. Ifran is your gateway 
+                  to unlocking Vancouver's hidden gems and cultural treasures. 
+                  Let him lead the way to an unforgettable adventure in Vancouver!
+                  </p>
+                  <a href="#" class="btn btn-secondary">
+                      <i class="bi-linkedin"></i>
+                  </a>
+                  <a href="#" class="btn btn-secondary">
+                    <i class="bi-envelope-fill"></i>
+                  </a>
+                  <a href="#" class="btn btn-secondary">
+                      <i class="bi-facebook"></i>
+                  </a>
+                  <a href="#" class="btn btn-secondary">
+                      <i class="bi-twitter"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <!-- Fourth team member-->
+      <div class="col-md-6 col-lg-3">
+          <div class="card">
+              <img src="./assets/images/tm-4.jpeg" class="card-img-top rounded-circle w-50 m-auto" alt="Sun Chuntao">
+              <div class="card-body">
+                  <h5 class="card-title">Sun Chuntao<br>Local Guide in Calgary</h5>
+                  <p class="card-text"> 
+                    Meet Sun Chuntao, your Calgary guide with over a decade of experience. 
+                    Sun is your gateway to the city's vibrant culture and stunning landscapes. 
+                    Get ready for an unforgettable adventure in Calgary!
+                  </p>
+                  <a href="#" class="btn btn-secondary">
+                      <i class="bi-linkedin"></i>
+                  </a>
+                  <a href="#" class="btn btn-secondary">
+                    <i class="bi-envelope-fill"></i>
+                  </a>
+                  <a href="#" class="btn btn-secondary">
+                      <i class="bi-facebook"></i>
+                  </a>
+                  <a href="#" class="btn btn-secondary">
+                      <i class="bi-twitter"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div> 
+</section> 
+<br>
+<br>
+
+<!--Part 4 : Adding accordion -->
+<section id="faq">
+  <div class="container">
+      <h2 class="text-center">Frequently Asked Questions</h2>
+      <br>
+      <div class="accordion" id="accordFAQ">
+        <!-- First accordion div item -->
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      What does your tourism company in Canada offer to tourists ?
+                  </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordFAQ">
+                  <div class="accordion-body">
+                      <p>We provide local guides who are experts in their regions, enhancing your Canadian travel experience.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Second accordion div item -->
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      What's the typical weather like in Canada, and how can your 
+                      local guides help tourists with weather-related information and recommendations ?
+                  </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordFAQ">
+                  <div class="accordion-body">
+                      <p>Your local guide can provide insights into the weather conditions during your visit 
+                        and offer recommendations for activities based on the season and weather forecasts.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Third accordion div item -->
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      How can I book a local guide for my Canadian tour ?
+                  </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordFAQ">
+                  <div class="accordion-body">
+                      <p>Booking is simple : visit our website or contact us with your travel dates and interests, 
+                        and we'll match you with a suitable local guide.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- 
+              Fourth accordion div item
+          -->
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Can your local guides provide recommendations for accommodation and dining ?
+                  </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordFAQ">
+                  <div class="accordion-body">
+                      <p>Yes, our guides can suggest accommodations, restaurants, and services based on your preferences and budget,
+                         enhancing your trip.</p>
+                  </div>
+              </div>
+          </div>
+      </div> 
+  </div> 
+</section>
+<br>
+
+ <!-- Part 5 - Contact section-->
+ <section id="contact" class="mt-3 container">
+  <div class="row">
+      <div class="col-md-6">
+          <h2 class="text-center">Write to us</h2>
+          <form>
+              <div class="mb-3">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp">
+                  <div id="fullNameHelp" class="form-text">
+                      Write your full name to be used when we contact you.
+                  </div>
+              </div>
+
+              <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Your email is only between you and us.</div>
+              </div>
+
+              <div class="mb-3">
+                  <label for="messageTextarea" class="form-label">
+                    Your request
+                  </label>
+                  <textarea class="form-control" aria-label="Your Message" id="messageTextarea">
+                  </textarea>
+              </div>
+
+              <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">
+                      Receive an update about our new activities!
+                  </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                  Send inquiry 
+              </button>
+          </form> 
+      </div>
+
+      <div class="col-md-6">
+          <h2 class="text-center">Contact Info</h2>
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item my-2">
+                  <span class="fw-bold">Our Location:</span>
+                  600 St Clair Ave W Toronto, ON M6C 1A9
+              </li>
+
+              <li class="list-group-item my-2">
+                  <span class="fw-bold">General Enquiry Contact Number:</span>
+                  1-856-183-1937
+              </li>
+
+              <li class="list-group-item my-2">
+                  <span class="fw-bold">Tourist Support Centre Number:</span>
+                  1-800-123-1122
+              </li>
+
+              <li class="list-group-item my-2">
+                  <span class="fw-bold">General Enquiry Email:</span>
+                  info@discovercanadaswonders.com
+              </li>
+
+              <li class="list-group-item my-2">
+                  <span class="fw-bold">Booking Email:</span>
+                  booking@discovercanadaswonders.com
+              </li>
+          </ul>
+
+          <div class="text-center mt-3">
+              <a href="#" class="btn btn-secondary">
+                  <i class="bi-linkedin"></i>
+              </a>
+              <a href="#" class="btn btn-secondary">
+                <i class="bi-envelope-fill"></i>
+              </a>
+              <a href="#" class="btn btn-secondary">
+                  <i class="bi-facebook"></i>
+              </a>
+              <a href="#" class="btn btn-secondary">
+                  <i class="bi-twitter"></i>
+              </a>
+          </div>
+      </div>
+  </div> 
+</section> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
